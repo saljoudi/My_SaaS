@@ -10,3 +10,13 @@ ta
 plotly
 joblib
 gunicorn
+
+Flask
+Flask-Login
+dash
+dash-bootstrap-components
+yahooquery
+pandas
+numpy
+ta
+joblib
