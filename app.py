@@ -67,10 +67,20 @@ app.layout = html.Div([
 ])
 
 @app.callback(
-    Output('page-content', 'children'),  # Ensure Output is imported
+    Output('page-content', 'children'),
     [Input('url', 'pathname')]
 )
 def display_page(pathname):
+    trading_analysis_layout = html.Div([
+        html.H1("Trading Analysis"),
+        # Add your trading analysis components here
+    ])
+
+    optimization_layout = html.Div([
+        html.H1("Parameter Optimization"),
+        # Add your parameter optimization components here
+    ])
+
     if pathname == '/dashboard':
         return html.Div([
             html.H1("Dashboard"),
