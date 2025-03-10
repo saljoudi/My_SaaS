@@ -4,6 +4,7 @@ from authentication import User
 from database import init_db, add_user, get_user_by_username
 import dash
 from dash import dcc, html
+from dash.dependencies import Input, Output, State  # Ensure these are imported
 import dash_bootstrap_components as dbc
 
 # Initialize Flask app
