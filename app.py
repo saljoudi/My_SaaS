@@ -1,5 +1,6 @@
 from flask import Flask, render_template, redirect, url_for
 from flask_login import LoginManager, login_required, current_user
+import dash  # Add this line to import the dash module
 from dash import dcc, html
 import dash_bootstrap_components as dbc
 from dash.dependencies import Input, Output, State
