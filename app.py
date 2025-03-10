@@ -67,7 +67,7 @@ app.layout = html.Div([
 ])
 
 @app.callback(
-    Output('page-content', 'children'),
+    Output('page-content', 'children'),  # Ensure Output is imported
     [Input('url', 'pathname')]
 )
 def display_page(pathname):
